@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background: #EFEFEF;
@@ -98,6 +103,16 @@ fieldset legend {
   padding: 0 8px;
 }
 
+.input-wrapper span {
+  color: #C1BCCC;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.input-wrapper span:hover {
+  color: #4E4958;
+}
+
 .nome-sobrenome {
   display: flex;
   justify-content: space-between; 
@@ -123,4 +138,36 @@ fieldset legend {
 
 .dia-hora > div:nth-child(1) {
   width: 100%
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 750px;
+  height: 160px;
+  flex-shrink: 0;
+
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+
+  padding: 52px 71px;
+}
+
+footer input {
+  height: 56px;
+
+  border-radius: 20px;
+  border: none;
+  background: #FF5374;
+
+  color: #FFF;
+  font-family: Staatliches;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+footer input:hover {
+  background: #992e43;
+  cursor: pointer;
 }
