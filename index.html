@@ -6,42 +6,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Mentoria</h1>
-    <p>Preencha o formulário abaixo 
-      para agendar a sua mentoria</p>
-  </header>
-  <form action="">
-    <fieldset>
-      <div class="fielset-wrapper">
-        <legend>Informações pessoais</legend>
-        <div class="nome-sobrenome">
-          <label for="event-nome">Nome</label>
-          <input type="text" id="event-nome">
+  <div class="page">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo 
+        para agendar a sua mentoria</p>
+    </header>
+    <form action="">
+      <fieldset>
+        <div class="fielset-wrapper">
+          <legend>Informações pessoais</legend>
+          <div class="nome-sobrenome">
+            <label for="event-nome">Nome</label>
+            <input type="text" id="event-nome">
+    
+            <label for="event-nome">Sobrenome</label>
+            <input type="text" id="event-sobrenome">
+          </div>
+          <label for="event-email">Email <span>(digite um email válido)</span></label>
+          <input type="email" id="event-email">
+          <label for="event-senha">Senha <span>(mínimo de 6 caracteres)</span></label>
+          <input type="password" id="event-senha">
   
-          <label for="event-nome">Sobrenome</label>
-          <input type="text" id="event-sobrenome">
         </div>
-        <label for="event-email">Email <span>(digite um email válido)</span></label>
-        <input type="email" id="event-email">
-        <label for="event-senha">Senha <span>(mínimo de 6 caracteres)</span></label>
-        <input type="password" id="event-senha">
-
-      </div>
-    </fieldset>
-    <fieldset>
-      <div class="fielset-wrapper">
-        <legend>Informações do mentor</legend>
-      </div>
-    </fieldset>
-    <fieldset>
-      <div class="fielset-wrapper">
-        <legend>Seus horários disponíveis</legend>
-      </div>
-    </fieldset>
-  </form>
+      </fieldset>
+      <fieldset>
+        <div class="fielset-wrapper">
+          <legend>Informações do mentor</legend>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="fielset-wrapper">
+          <legend>Seus horários disponíveis</legend>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </body>
 </html>
