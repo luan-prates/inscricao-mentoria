@@ -21,15 +21,16 @@
     </header>
     <form >
       <div class="nome-sobrenome">
-      <div class="input-wrapper">
-        <label for="">Nome</label>
-        <input type="text">
+        <div class="input-wrapper">
+          <label for="">Nome</label>
+          <input type="text">
+        </div>
+        <div class="input-wrapper">
+          <label for="">Sobrenome</label>
+          <input type="text">
+        </div>
       </div>
-      <div class="input-wrapper">
-        <label for="">Sobrenome</label>
-        <input type="text">
-      </div>
-      </div>
+
       <div class="input-wrapper">
         <label for="">Email</label>
         <input type="email">
@@ -50,32 +51,37 @@
             <label for="id-feedback">Feedback sobre o mentor</label>
             <textarea id="id-feedback"></textarea>
           </div>
-          <div class="input-wrapper">
-            <input type="checkbox" id="id-esclarecimentos" >
+          <div class="input-wrapper esclarecimentos">
+            <input class="input-checkbox" type="checkbox" id="id-esclarecimentos" >
             <label for="id-esclarecimentos"> Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label><br>
           </div>
         
       </fieldset> 
+
       <fieldset>
         <div class="fielset-wrapper">
           <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+        </div>
           <div class="dia-hora">
-            <div class="input-wrapper">
-              <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+            <div class="input-datas">
+              <label for="event-date">
+                Data 
+                <span>(DD/MM/AAAA)</span>
+              </label>
               <input type="date" id="event-date" />
             </div>
     
-            <div class="input-wrapper">
+            <div class="input-datas">
               <label for="event-time-das">Das</label>
               <input type="time" id="event-time-das" />
             </div>
   
-            <div class="input-wrapper">
+            <div class="input-datas">
               <label for="event-time-ate">Até</label>
               <input type="time" id="event-time-ate" />
             </div>
           </div>
-        </div>
+        
       </fieldset>
       <button>SALVAR</button>
     </form>

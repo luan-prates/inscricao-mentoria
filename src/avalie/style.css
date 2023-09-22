@@ -9,8 +9,9 @@ body {
   font-family: Poppins;
   font-size: 14px;
   line-height: 24px;
-
+  
   background: #BFD7E4;
+
 }
 
 body::before {
@@ -28,8 +29,6 @@ body::before {
 
 .page{
   width: 750px;
-  display: flex;
-  flex-direction: column;
   margin: auto;
 }
 
@@ -82,19 +81,19 @@ header h2 {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+
   background: #FFF;
 
   border-radius: 0 0 20px 20px;
 
   padding: 32px 64px;
+
+  height: 1075px;
 }
 
-
-
-
-.input-wrapper label {
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .input-wrapper span {
@@ -111,6 +110,8 @@ form {
   border: 1px solid  #E6E6F0;
   background: #FAFAFC;
   margin-bottom: 18px;
+
+  padding: 8px;
 }
 
 .input-wrapper select {
@@ -119,14 +120,34 @@ form {
   border-radius: 8px;
   border: 1px solid #E6E6F0;
   background: #FAFAFC;
+
+  margin-bottom: 32px;
+  padding:8px ;
 }
 
 .input-wrapper textarea {
   width: 608px;
   height: 167px;
-  flex-shrink: 0;
-}
 
+  border-radius: 8px;
+  border: 1px solid  #E6E6F0;
+  background: #FAFAFC;
+
+  resize: none;
+  padding: 8px;
+  }
+
+.input-wrapper .input-checkbox {
+  width: 24px;
+  height: 24px;
+}
+div.input-wrapper.esclarecimentos {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 8px;
+
+ }
 .nome-sobrenome input{
   width: 300px;
 }
@@ -139,7 +160,6 @@ form {
 
 fieldset {
   border: none;
-  
 }
 
 .fielset-wrapper legend{
@@ -156,4 +176,46 @@ fieldset {
 
   text-align: center;
 
+}
+
+.dia-hora {
+  display: flex;
+  gap: 20px;
+}
+
+.dia-hora > div:nth-child(1) {
+  width: 100%
+}
+
+.input-datas {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-datas input{
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid  #E6E6F0;
+  background: #FAFAFC;
+
+  margin-bottom: 64px;
+}
+
+button {
+  display: flex;
+  width: 622px;
+  height: 51px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #F67669;
+
+  border: none;
+  color: #FFF;
+
+  margin-bottom: 64px;
 }
