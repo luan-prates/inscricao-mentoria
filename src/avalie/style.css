@@ -91,6 +91,9 @@ form {
   padding: 32px 64px;
 }
 
+
+
+
 .input-wrapper label {
 }
 
@@ -98,12 +101,12 @@ form {
   color: #C1BCCC;
   font-size: 12px;
   line-height: 20px;
-  }
+}
 
 .input-wrapper input {
   width: 622px;
   height: 56px;
-
+  
   border-radius: 8px;
   border: 1px solid  #E6E6F0;
   background: #FAFAFC;
@@ -124,9 +127,19 @@ form {
   flex-shrink: 0;
 }
 
+.nome-sobrenome input{
+  width: 300px;
+}
+.nome-sobrenome{
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+
+}
+
 fieldset {
   border: none;
-
+  
 }
 
 .fielset-wrapper legend{
